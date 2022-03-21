@@ -33,7 +33,7 @@ export class BandController {
 
     async getBandById(req: Request, res: Response) {
 
-        const id: any = req.body.id
+        const id: any = req.params
         const header: string = req.headers.authorization as string
     
             const bandBusiness = new BandBusiness(
